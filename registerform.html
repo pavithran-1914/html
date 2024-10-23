@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin:auto;
+            width:500px;
+            height:400px;
+            background-color: burlywood;
+            
+        }
+        td{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="success.html">
+        <table border="2">
+            <caption><h2 align="center">Registration Form</h2></caption>
+     <tr><td>
+        <label>Name:</label></td>
+       <td><input type="text" name="firstname" value="" required pattern="[A-Z]{6}"></td> </tr><br>
+        <tr><td><label>Age:</label></td>
+      <td> <input type="number" name="age" value="" required></td> </tr><br>
+        <tr><td><label>phonenumber:</label></td>
+        <td><input type="number" name="phonenumber" pattern="[0-9]" maxlength="10" value=""></td></tr><br>
+        <tr><td><label>Address:</label></td>
+        <td><textarea row="2"></textarea></td></tr><br>
+      <tr>  <td><label>Gender</label></td>
+       <td><input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female</td> </tr><br>
+        <tr><td><label>Language</label></td>
+        <td><input type="checkbox" name="language" value="tamil">tamil
+        <input type="checkbox" name="language" value="English">English
+        <input type="checkbox" name="language" value="hindi">hindi</td></tr><br> 
+        <tr><td><label>Email id</label></td>
+        <td><input type="email" name="email" value="" required></td></tr><br>
+        <tr><td><label>Qualification:</label></td>
+       <td> <select>
+            <option>choose</option>
+            <option>B.sc</option>
+            <option>BE</option>
+            <option>BTech</option>
+            <option>ME</option>
+            <option>MCA</option>
+            <option>BCA</option>
+
+        </select></td></tr><br>
+      <tr> <td><label for="Date">Date</label></td>
+        <td><input type="date" name="date" value=""></td></tr> <br>
+      <tr>  <td><label>LinkedIn</label></td>
+     <td>  <input type="url" name="url" value=""></td></tr><br>
+        <tr><td><input type="submit" value="Register"></td></tr>
+    </table>
+
+    </form>
+</body>
+</html>
